@@ -1,0 +1,17 @@
+{
+  "name": "nft-market-place",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon server/server.js"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "dotenv": "^16.3.1",
+    "ejs": "~2.6.1",
+    "ethers": "^6.8.1",
+    "express": "~4.16.1",
+    "hardhat": "^2.19.1",
+    "nodemon": "^3.0.1"
+  }
+}
