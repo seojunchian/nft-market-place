@@ -1,12 +1,13 @@
 var express = require("express");
 var app = express();
 var path = require("path");
-var indexRouter = require("./routes/index");
+var homeRouter = require("./routes/routeHome");
 
-app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
+
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use("/", indexRouter);
+app.use("/", homeRouter);
 
 app.listen(3000);
