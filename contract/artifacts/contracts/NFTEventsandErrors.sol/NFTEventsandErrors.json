@@ -2,9 +2,98 @@
   "_format": "hh-sol-artifact-1",
   "contractName": "NFTEventsandErrors",
   "sourceName": "contracts/NFTEventsandErrors.sol",
-  "abi": [],
-  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220d799b4d113a9b7eba1fc28feeb405db0f07da725d2ecf2f8754ba57d93591d0b64736f6c63430008130033",
-  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220d799b4d113a9b7eba1fc28feeb405db0f07da725d2ecf2f8754ba57d93591d0b64736f6c63430008130033",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "InvalidOwner",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "InvalidReceiver",
+      "type": "error"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        }
+      ],
+      "name": "InvalidSender",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "owner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "approved",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Approve",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea264697066735822122004ce76516b6f32510e6d605cb284f3d47674b9be3bac6d050e95eb8566e1ad8664736f6c63430008130033",
+  "deployedBytecode": "0x6080604052600080fdfea264697066735822122004ce76516b6f32510e6d605cb284f3d47674b9be3bac6d050e95eb8566e1ad8664736f6c63430008130033",
   "linkReferences": {},
   "deployedLinkReferences": {}
 }

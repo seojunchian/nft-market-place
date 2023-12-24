@@ -3,18 +3,19 @@ require("dotenv").config();
 const contractBuild = require("../artifacts/contracts/NFT.sol/NFT.json");
 
 const provider = new ethers.JsonRpcProvider(process.env.SEPOLIA_API_KEY);
-const wallet = ethers.Wallet.fromPhrase(process.env.SENDER_MNEMONIC);
-const connectedWallet = wallet.connect(provider);
-const contract = new ethers.ContractFactory(
-  contractBuild.abi,
-  contractBuild.bytecode,
-  connectedWallet
+const signer = new ethers.Wallet(process.env.SENDER_PRIVATE_KEY, provider);
+signer.connect(provider);
+
+const factory = new ethers.ContractFactory(
+	contractBuild.abi,
+	contractBuild.bytecode,
+	signer
 );
 
 async function main() {
-  const deployed = await contract.deploy("a", "a");
+	const deployedContract = factory.deploy();
 }
 
 main().catch((error) => {
-  console.log(error);
+	console.log(error);
 });
