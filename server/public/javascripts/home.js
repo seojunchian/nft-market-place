@@ -1,6 +1,6 @@
 import {ethers} from "https://cdn.ethers.io/lib/ethers-5.7.esm.min.js";
 
-const contractBuild = await fetch("../NFT.json").then((res) => res.json());
+const contractBuild = await fetch("NFT.json").then((res) => res.json());
 
 const nftBuild = await fetch(
 	"https://testnets-api.opensea.io/api/v2/collections/hopefully-will-be-the-last-contract-5-28"
