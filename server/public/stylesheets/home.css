@@ -1,0 +1,100 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Courier New";
+}
+body {
+	background: url(../images/home-background.jpg);
+	background-size: contain;
+}
+body > .header {
+	background-color: rgba(59, 89, 152, 0.9);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px;
+	border-radius: 0 0 20px 20px;
+}
+body > .header > .header-home {
+}
+body > .header > .header-home > #header-home-button {
+	width: 150px;
+	height: 50px;
+	font-size: 16px;
+	border-radius: 25px;
+	background-color: #fff;
+	border: none;
+	cursor: pointer;
+}
+body > .header > .header-login {
+	display: flex;
+	align-items: center;
+}
+body > .header > .header-login > #header-login-button {
+	width: 150px;
+	height: 50px;
+	font-size: 16px;
+	border: none;
+	border-radius: 25px;
+	background-color: #fff;
+	cursor: pointer;
+	margin-right: 10px;
+}
+body > .header > .header-login > .header-login-texts {
+	width: 560px;
+	display: flex;
+	flex-direction: column;
+	border-radius: 4px;
+	background-color: #fff;
+}
+body > .header > .header-login > .header-login-texts > p {
+	font-size: 18px;
+	text-align: left;
+}
+body
+	> .header
+	> .header-login
+	> .header-login-texts
+	> #header-login-texts-address {
+	margin: 5px 0 1px 8px;
+}
+body
+	> .header
+	> .header-login
+	> .header-login-texts
+	> #header-login-texts-balance {
+	margin: 1px 0 5px 8px;
+}
+body > .main {
+}
+body > .main > .main-market {
+	border-radius: 20px;
+	background-color: rgba(223, 227, 238, 0.8);
+}
+body > .main > .main-market > #main-market-header {
+	text-align: center;
+	padding-top: 5px;
+}
+body > .main > .main-market > .main-market-boxes {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 5px 0 0 20px;
+}
+body > .main > .main-hr {
+	border: 1px solid black;
+}
+body > .main > .main-your {
+	border-radius: 20px;
+	background-color: rgba(223, 227, 238, 0.8);
+}
+body > .main > .main-your > #main-your-header {
+	text-align: center;
+	padding-top: 5px;
+}
+body > .main > .main-your > .main-your-boxes {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 5px 0 0 20px;
+}

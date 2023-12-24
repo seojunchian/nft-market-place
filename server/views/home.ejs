@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>NFT PURCHASE SITE</title>
-    <link rel="stylesheet" href="stylesheets/home.css" />
-  </head>
-  <body>
-    <button id="btn-nft">NFT PURCHASE</button>
-    <script src="javascripts/home.js"></script>
-  </body>
+	<head>
+		<title>NFT PURCHASE SITE</title>
+		<link rel="stylesheet" href="stylesheets/home.css" />
+	</head>
+	<body>
+		<div class="header">
+			<div class="header-home">
+				<button id="header-home-button">Home</button>
+			</div>
+			<div class="header-login">
+				<button id="header-login-button">Log In</button>
+				<div class="header-login-texts">
+					<p id="header-login-texts-address">Address:</p>
+					<p id="header-login-texts-balance">Balance:</p>
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="main-market">
+				<p id="main-market-header">NFT's On Market</p>
+				<div class="main-market-boxes"></div>
+			</div>
+			<hr class="main-hr" />
+			<div class="main-your">
+				<p id="main-your-header">Your NFT's</p>
+				<div class="main-your-boxes"></div>
+			</div>
+		</div>
+		<script type="module" src="javascripts/home.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</body>
 </html>
