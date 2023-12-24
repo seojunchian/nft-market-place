@@ -1,0 +1,31 @@
+- NFT.sol
+--- new contract
+--> done
+--- mint it with loop
+--> done
+
+- .json
+--- upgrade image properties' value
+--> done
+--- 19, 18, 17, 16 json image values needed to be fixed cause same with 15, 14, 13, 12
+--> done, 23, 22, 21, 20 deleted
+
+- home.js
+--- main part
+----- there will be lines for nfts each line will have 5 nfts and when line is loaded a new line will be start for nfts
+----> flex-wrap was the solution
+----- flex wrap doesnt work really well so add query for nfts by their names - identifier
+----> done calling from last of properties
+----- reach the contract and use transfer function
+----> done
+----- show only creaters nfts so when someone else got it, it wont be seeing there anymore
+----> done with filtering main part with if nft owner equal to nft editor
+
+--- your part
+----- there will be a query for account for what he owns in the contract and will be shown in section
+----> done
+
+- home.css
+--- header part
+----- padding to header, buttons and texts div
+----> no need
